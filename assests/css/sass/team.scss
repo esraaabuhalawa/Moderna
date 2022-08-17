@@ -1,0 +1,67 @@
+$navColor: #63a4d9; 
+#navbar{
+    background-color: rgba(13, 39, 53, 0.911) !important;
+}
+#team{
+    padding: 40px 0;
+    background-color: #fff;
+    .card{
+        .img-container{
+            position: relative;
+            overflow: hidden;
+        }
+        .img-container:hover aside{
+            bottom: 0;
+        }
+        aside{
+            padding: 5px 0;
+            position: absolute;
+            background: rgba(13, 39, 53, 0.911);
+            width: 100%;
+            text-align: center;
+            overflow: hidden;
+            bottom: -40px;
+            transition: 0.8s ease-in;
+        }
+        a{  
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2rem;
+            margin-right: 15px;
+        }
+        a:hover{
+            color:$navColor;
+        }
+        h5{
+            font-size: 1.8rem;
+            font-weight: 500;
+            margin-bottom: 0;
+        }
+        span{
+            font-size: 0.8rem;
+            color: $navColor;
+            transform: scaleY(1.1);
+        }
+        .card-text{
+            font-size: 0.9rem;
+            margin-top: 15px;
+            color: #667d8b;
+            line-height: 1.5;
+            text-align: justify;
+            font-style: italic;
+
+        }
+        .card-body{
+   
+            padding: 1.5rem 0;
+        }
+    }
+}
+.card{
+    background-color: transparent;
+    border: none;
+    margin: 1.2rem 0;
+}
+#contactUs{
+    margin-top: 0 !important;
+}

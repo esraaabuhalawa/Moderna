@@ -1,0 +1,61 @@
+#navbar {
+  background-color: rgba(13, 39, 53, 0.911) !important;
+}
+
+main article, main form {
+  background-color: #fff;
+  -webkit-box-shadow: 1px 1px 12px 6px #d3dee8;
+          box-shadow: 1px 1px 12px 6px #d3dee8;
+}
+
+main article {
+  padding: 2rem 1rem;
+}
+
+main article div {
+  margin: 10px auto;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px dotted #68A4C4;
+  width: 55px;
+  height: 55px;
+}
+
+main article div .far, main article div .fas {
+  font-size: 1.8rem;
+  color: #68A4C4;
+  line-height: 1.5;
+  padding-top: 5px;
+}
+
+main article h5 {
+  color: #6A6A6A;
+  font-weight: bolder;
+}
+
+main article p, main article span {
+  font-size: 0.9rem;
+  color: #535353;
+}
+
+main form {
+  padding: 4rem 1rem;
+}
+
+main form * {
+  margin-top: 20px;
+}
+
+main form input.form-control:focus, main form textarea:focus {
+  border-color: #68A4C4 !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+main form button {
+  background-color: #68A4C4;
+  font-size: 1.1rem;
+  color: #fff;
+  border: none;
+}
+/*# sourceMappingURL=contact.css.map */

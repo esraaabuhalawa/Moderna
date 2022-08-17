@@ -1,0 +1,142 @@
+#navbar {
+  background-color: #215571 !important;
+}
+
+#info {
+  background-color: #fff;
+  padding: 4rem 0;
+}
+
+#info h5 {
+  color: #4b6481;
+  font-size: 1.6rem;
+}
+
+#info p {
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  color: #476986;
+  text-align: left;
+  margin-top: 1.8rem;
+}
+
+#info i.fas {
+  display: inline-block;
+  border: 1px solid #70b5dc;
+  border-radius: 50%;
+  padding: 3px;
+  font-size: 0.8rem;
+  color: #70b5dc;
+  margin-right: 5px;
+}
+
+#info span {
+  display: block;
+  margin-top: 10px;
+  line-height: 1.5;
+  font-size: 1rem !important;
+  color: #4c6275;
+  font-weight: normal;
+}
+
+/*Start Of User Styling*/
+#user {
+  padding: 4rem 0;
+}
+
+#user .clients {
+  font-size: 2.7rem;
+  color: #63a4d9;
+  font-weight: 400;
+  margin-bottom: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#user h6 {
+  font-weight: 400;
+  color: #333;
+}
+
+/*Start Of Skills Styling*/
+#skills {
+  padding: 4rem 0;
+  background-color: #fff !important;
+}
+
+.progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 1.9rem;
+  overflow: hidden;
+  line-height: 0;
+  font-size: .75rem;
+  background-color: #e9ecef;
+  border-radius: 0.25rem;
+  margin: 12px 0;
+}
+
+.progress span {
+  font-size: 0.8rem;
+}
+
+.progress-bar {
+  width: 0;
+}
+
+/*Start Of Tetstimonials Styling*/
+#tetstimonials {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+#tetstimonials article {
+  margin-top: 50px;
+}
+
+#tetstimonials article img {
+  margin-right: auto;
+  margin-left: auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: block;
+}
+
+#tetstimonials article h5 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #000;
+  margin-top: 15px;
+  margin-bottom: 5px !important;
+  -webkit-transform: scaleY(1.08);
+          transform: scaleY(1.08);
+}
+
+#tetstimonials article span {
+  color: #869ba6;
+  font-weight: bold;
+  font-size: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#tetstimonials article p {
+  font-size: 1.1rem;
+  color: #415662;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  background-color: transparent;
+  border: 1px solid #63a4d9;
+  width: 13px;
+  height: 13px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background-color: #63a4d9;
+}
+/*# sourceMappingURL=about.css.map */

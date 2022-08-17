@@ -1,0 +1,336 @@
+$navColor: #63a4d9;
+$headFont: 3.5rem;
+$whiteColor: #fff;
+$mainColor: #edf2f6;
+@mixin bordered($width, $color) {
+    border: $width solid $color;
+  }
+  @mixin paragraphText {
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    color: #476986;
+  }
+  @mixin sectionSpace {
+    margin-bottom: 4rem;
+    padding: 4rem 0;
+  }
+  @keyframes slide-up {
+    0% {
+      opacity: 0;
+      transform: translateY(150px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+#navbar{
+    background-color: rgba(13, 39, 53, 0.911) !important;
+}
+#service {
+    @include sectionSpace;
+    background-color: #fff;
+    article {
+      padding: 1.5rem 1rem;
+      aside {
+        padding: 2rem;
+        border-radius: 5px;
+        box-shadow: 1px 0px 6px 7px #fcfafa;
+        div:first-of-type {
+          width: 70px;
+          height: 70px;
+          border-radius: 50%;
+          background-color: pink;
+          text-align: center;
+          margin: 10px auto;
+        }
+        div:first-of-type i {
+          font-size: 2.5rem;
+          line-height: 1.8;
+        }
+        h3 {
+          font-size: 1.4rem;
+          font-weight: 600;
+          margin-top: 25px;
+          margin-bottom: 15px;
+        }
+        p {
+          @include paragraphText;
+        }
+      }
+    }
+    article:nth-of-type(1) aside{
+        animation: slide-up 0.5s ease-in-out;
+      }
+      article:nth-of-type(2) aside{
+        animation: slide-up 1s ease-in-out ;
+      }
+      article:nth-of-type(3) aside{
+        animation: slide-up 1.5s ease-in-out;
+      }
+      article:nth-of-type(4) aside{
+        animation: slide-up 1.8s ease-in-out;
+      }
+    article:nth-of-type(1) aside:hover {
+      @include bordered(1px, #ff689b);
+      animation: slide-up 1s ease-in;
+    }
+    article:nth-of-type(2) aside:hover {
+      @include bordered(1px, #3fcdc7);
+      animation: slide-up 1s ease-in 0.5s;
+    }
+    article:nth-of-type(3) aside:hover {
+      @include bordered(1px, #41cf2e);
+      animation: slide-up 1s ease-in 0.8s;
+    }
+    article:nth-of-type(4) aside:hover {
+      @include bordered(1px, #1362a0);
+      animation: slide-up 1s ease-in 1s;
+    }
+    article:nth-of-type(1) {
+      div:first-of-type {
+        background: #fcd6e3;
+      }
+      div:first-of-type i {
+        color: #ff689b;
+      }
+    }
+    article:nth-of-type(2) {
+      div:first-of-type {
+        background: #d0f4f2;
+      }
+      div:first-of-type i {
+        color: #3fcdc7;
+      }
+    }
+    article:nth-of-type(3) {
+      div:first-of-type {
+        background: #cef4c8;
+      }
+      div:first-of-type i {
+        color: #41cf2e;
+      }
+    }
+    article:nth-of-type(4) {
+      div:first-of-type {
+        background: rgba(178, 209, 232, 0.6);
+      }
+      div:first-of-type i {
+        color: #1362a0;
+      }
+    }
+  }
+  /*End of Service*************/
+  /*Start Of About Section*/
+#about2 {
+    @include sectionSpace;
+    background-color: $whiteColor;
+    p {
+      @include paragraphText;
+      text-align: left;
+      line-height: 2;
+    }
+    h4 {
+      font-size: 1.4rem;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+    article:nth-of-type(1) > div {
+      position: relative;
+  
+      div {
+        position: absolute;
+        left: 40%;
+        top: 40%;
+        background-color: rgba(99, 164, 217, 0.5);
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        text-align: center;
+        transition: 0.5s linear;
+      }
+      div:hover {
+        background-color: rgba(99, 164, 217, 0.9);
+        cursor: pointer;
+      }
+      div:hover i {
+        transform: scale(0.8);
+      }
+      i {
+        color: $whiteColor;
+        font-size: 2.5rem;
+        line-height: 2.2;
+        padding-left: 10px;
+      }
+    }
+    aside {
+      color: $navColor;
+      background-color: $mainColor;
+      width: 70px;
+      height: 70px;
+      border-radius: 5px;
+      text-align: center;
+      transition: 0.5s ease-in;
+      margin-right: 25px;
+      i {
+        font-size: 2.1rem;
+        line-height: 2.1;
+      }
+    }
+    aside:hover {
+      background-color: $navColor;
+      color: $mainColor;
+    }
+    article:nth-of-type(2) div:nth-of-type(1) {
+      margin-bottom: 3rem;
+    }
+  }
+  /*End Of About*/
+  /******************************/
+  /*Start of Plan Section*/
+  #plan{
+      perspective: 1000px;
+      @include sectionSpace;
+      background-color: #fff;
+      
+        aside{
+            border-top:5px solid transparent;
+            position: absolute;
+            top: 80%;
+            left: 5%;
+            width: 90%;
+            background-color: #fff;
+            padding: 1rem;
+            p{
+                @include paragraphText;
+                font-size: 0.8rem;
+                margin-top: 1rem;
+            }
+            span{
+                text-align: left !important;
+                margin-top: 1rem;
+                display: inline-block;
+            }
+            h5{
+                color: #68A4C4;
+                font-size: 1.7rem;
+            }
+            .fas{
+                transform: scaleX(1.5);
+                margin-right: 8px;
+                font-size: 0.8rem;
+                color: #476986;
+            }
+            a{
+                color: #476986;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 0.9rem;
+            }
+          
+        }
+        .card{
+            border: none;
+        }
+        img{
+            transition: 0.5s ease-in-out;
+        }
+        >div{z-index: 20;}
+        .card-body{
+            width: 90%;
+            border-top:5px solid transparent;
+            z-index: 50;
+            margin-top: -30px;
+            margin-left:5% ;
+            background-color: #fff;
+            box-shadow:1px 1px 12px 6px #d3dee8;
+            p{
+                @include paragraphText;
+                font-size: 0.8rem;
+                margin-top: 1rem;
+            }
+            span{
+                text-align: left !important;
+                margin-top: 1rem;
+                display: inline-block;
+            }
+            h5{
+                color: #68A4C4;
+                font-size: 1.7rem;
+            }
+            .fas{
+                transform: scaleX(1.5);
+                margin-right: 8px;
+                font-size: 0.8rem;
+                color: #476986;
+            }
+            a{
+                color: #476986;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 0.9rem;
+            }
+        }
+    }
+  /*End Of Plan Section*/
+  /*Start Of Pricing*/
+  .top-header{margin-bottom: 4rem ;}
+  #pricing{
+    padding: 2rem 0;
+    .first,.second{
+        background-color: #fff;
+        padding: 2rem 13px;
+        border: none;
+        box-shadow:1px 1px 12px 6px #d3dee8;
+    }
+    article{
+        padding: 0 13px; 
+        border: none;
+        .card-title{
+            font-weight: lighter !important;
+            font-size: 2.3rem;
+            margin-bottom: 20px !important;
+        }
+        h3{
+            font-size: 3rem;
+            font-weight: 400;
+            color: #68A4C4;
+        }
+        .card-subtitle{
+            font-weight: 400;
+            font-size: 1.1rem;
+            color: #b9bfc5;
+        }
+        p:first-of-type{margin-top: 2.3rem;}
+        span{
+            color: #999;
+            font-size: 1.1rem;
+        }
+        .fas{
+            margin-right: 8px;
+            transform: scale(1.1);
+            font-size: 0.8rem; 
+        }
+        .fa-check{color:#68A4C4;}
+        .fa-times{color:#b9bfc5;}
+        a{
+            display: inline-block;
+            color: #fff;
+            background-color: rgba(13, 39, 53, 0.911);
+            border-radius: 30px;
+            margin-top: 2rem;
+            padding: 8px 2rem;
+            transition: 0.5s ease-in-out;
+         
+        }
+        a.special{background-color:#68A4C4;}
+    }
+    .doceration{
+        text-decoration: line-through;
+        color: #999;
+    }
+  }
+  /*End Of Pricing*/

@@ -1,0 +1,423 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&family=Rubik&display=swap");
+@import url('General.css');
+/*html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #edf2f6;
+}
+/****General Rules*/
+/*$navColor: #63a4d9; 
+$headFont: 3.5rem;
+$whiteColor: #fff;
+$mainColor: #edf2f6;
+.mt-6 {
+  margin-top: 3.8rem;
+}
+.mt-8 {
+  margin-top: 5.5rem;
+}
+$paragraphFont: "Rubik", sans-serif;
+@mixin bordered($width, $color) {
+  border: $width solid $color;
+}
+@mixin paragraphText {
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  color: #476986;
+}
+@mixin sectionSpace {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding: 3rem 0;
+}
+
+@keyframes animate1 {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes animate2 {
+  0% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.scrolled {
+  background-color:  rgba(13, 39, 53, 0.7) !important;
+  transition: background-color 200ms linear;
+}
+*/
+header {
+  background-image: linear-gradient(
+      rgba(52, 141, 197, 0.7),
+      rgba(28, 45, 57, 0.11)
+    ),
+    url("../../images/pexels-daniel-bendig-887845.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  /*Start Of Slide Styling*/
+  .slide-cont {
+    color: $whiteColor;
+    padding: 4rem 0;
+    .carousel-item {
+      padding: 4rem 0;
+      h1 {
+        font-size: 2rem;
+        animation: animate1 1s ease-in-out 0.25s;
+      }
+      p {
+        width: 80%;
+        margin: 2rem auto;
+        font-weight: lighter;
+        letter-spacing: 0.5px;
+        animation: animate2 0.75s ease-in-out 0.5s;
+      }
+      a {
+        font-weight: 600;
+        color: $whiteColor;
+        letter-spacing: 0.5px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1.1rem;
+        padding: 0.3rem 2.1rem;
+        border: 2px solid $navColor;
+        border-radius: 25px;
+        font-family: "Nanum Gothic", sans-serif;
+        animation: animate2 1s ease-in 0.5s;
+      }
+    }
+  }
+}
+/*Start Of Services section */
+#services {
+  @include sectionSpace;
+  background-color: $whiteColor;
+
+  article {
+    padding: 1.5rem 1rem;
+    aside {
+      padding: 2rem;
+      border-radius: 5px;
+      box-shadow: 1px 0px 6px 7px #fcfafa;
+      div:first-of-type {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background-color: pink;
+        text-align: center;
+        margin: 10px auto;
+      }
+      div:first-of-type i {
+        font-size: 2.5rem;
+        line-height: 1.8;
+      }
+      h3 {
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin-top: 25px;
+        margin-bottom: 15px;
+      }
+      p {
+        @include paragraphText;
+      }
+    }
+  }
+
+  article:nth-of-type(1) aside:hover {
+    @include bordered(1px, #ff689b);
+  }
+  article:nth-of-type(2) aside:hover {
+    @include bordered(1px, #3fcdc7);
+  }
+  article:nth-of-type(3) aside:hover {
+    @include bordered(1px, #41cf2e);
+  }
+  article:nth-of-type(4) aside:hover {
+    @include bordered(1px, #1362a0);
+  }
+  article:nth-of-type(1) {
+    div:first-of-type {
+      background: #fcd6e3;
+    }
+    div:first-of-type i {
+      color: #ff689b;
+    }
+  }
+  article:nth-of-type(2) {
+    div:first-of-type {
+      background: #d0f4f2;
+    }
+    div:first-of-type i {
+      color: #3fcdc7;
+    }
+  }
+  article:nth-of-type(3) {
+    div:first-of-type {
+      background: #cef4c8;
+    }
+    div:first-of-type i {
+      color: #41cf2e;
+    }
+  }
+  article:nth-of-type(4) {
+    div:first-of-type {
+      background: rgba(178, 209, 232, 0.6);
+    }
+    div:first-of-type i {
+      color: #1362a0;
+    }
+  }
+}
+/*********************************/
+/*Start Of About Section*/
+#about {
+  @include sectionSpace;
+  background-color: $whiteColor;
+  p {
+    @include paragraphText;
+    text-align: left;
+    line-height: 2;
+  }
+  h4 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+  }
+  article:nth-of-type(1) > div {
+    position: relative;
+
+    div {
+      position: absolute;
+      left: 40%;
+      top: 40%;
+      background-color: rgba(99, 164, 217, 0.5);
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      text-align: center;
+      transition: 0.5s linear;
+    }
+    div:hover {
+      background-color: rgba(99, 164, 217, 0.9);
+      cursor: pointer;
+    }
+    div:hover i {
+      transform: scale(0.8);
+    }
+    i {
+      color: $whiteColor;
+      font-size: 2.5rem;
+      line-height: 2.2;
+      padding-left: 10px;
+    }
+  }
+  aside {
+    color: $navColor;
+    background-color: $mainColor;
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.5s ease-in;
+    margin-right: 25px;
+    i {
+      font-size: 2.1rem;
+      line-height: 2.1;
+    }
+  }
+  aside:hover {
+    background-color: $navColor;
+    color: $mainColor;
+  }
+  article:nth-of-type(2) div:nth-of-type(1) {
+    margin-bottom: 3rem;
+  }
+}
+/*End Of About*/
+/*Start Of Features*/
+#features {
+  background-color: $whiteColor;
+
+  h5 {
+    color: #4b6481;
+    font-size: 1.4rem;
+  }
+  p {
+    @include paragraphText;
+    text-align: left;
+    margin-top: 1.8rem;
+  }
+
+  article div:first-of-type {
+    margin-bottom: 15px;
+  }
+  .row article:first-of-type p:last-of-type,
+  span {
+    font-size: 1rem !important;
+    color: #4c6275;
+    font-weight: normal;
+  }
+  .row article:last-of-type {
+    margin-top: 25px;
+  }
+  i.fas {
+    margin-right: 6px;
+    color: #4bacb2;
+    font-size: 1.3rem;
+  }
+  .check {
+    margin-bottom: 15px;
+  }
+  .check:first-of-type {
+    margin-top: 25px;
+  }
+}
+/*End Of Features************/
+
+
+/********************************/
+/*.animation-element{
+    opacity: 0;
+    transform:translateY(100px)
+}
+.animation-element.in-view{
+  opacity: 1;
+  transform: translateY(0px);
+  transition: all 1s linear;
+}
+.left-padding{padding-left: 3rem;}
+
+*/
+/***********************************/
+/* Extra small devices (portrait phones, less than 576px)
+No media query since this is the default if you use "mobile first" */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  header {
+    .slide-cont {
+      padding: 5rem 0;
+      .carousel-item {
+        h1 {
+          font-size: 3.8rem;
+        }
+        p {
+          width: 65%;
+        }
+        a {
+          transition: 0.5s ease-in;
+        }
+        a:hover {
+          color:#63a4d9;
+          background-color: #f2f2f2;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .left-padding {
+    padding-left: 0;
+  }
+  .row article:last-of-type {
+    margin-top: 0;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #navbar {
+    a,
+    button {
+      display: inline-block;
+      transition: background-color 0.5s;
+      margin-top: 0;
+      padding: 0.5rem;
+    }
+
+    a:not(a:last-of-type),
+    button {
+      margin-left: 5px;
+    }
+    a:hover,
+    #dropdown:hover,
+    #dropContent button:hover {
+      background: #63a4d9;
+      border-bottom: 3px solid #fff;
+      text-decoration: none;
+      color: #fff;
+    }
+    #btn {
+      display: none;
+    }
+    #logo:hover {
+      color: #fff;
+    }
+    #navItems {
+      display: block;
+      background-color: transparent;
+      position: static;
+      padding: 15px 0px;
+      height: auto;
+      overflow: hidden;
+      .fas {
+        position: relative;
+        right: 0 !important;
+      }
+    }
+    .fa-times {
+      display: none;
+    }
+    button i {
+      margin-left: 5px !important;
+      margin-top: 0 !important;
+    }
+    #dropContent {
+      margin-top: 0.1rem;
+      position: absolute;
+      left: 78%;
+      width: 20%;
+    }
+    #dropContent,
+    #dropContentDeep {
+      background-color: #fff;
+      box-shadow: -3px 4px 2px 3px #bec4ca;
+    }
+    #dropContent a,
+    #dropContent button {
+      color: #172f42;
+      margin-top: 10px;
+    }
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}

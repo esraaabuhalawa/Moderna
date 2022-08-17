@@ -1,0 +1,141 @@
+/* Extra small devices (portrait phones, less than 576px)
+No media query since this is the default if you use "mobile first" */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  header {
+    .slide-cont {
+      padding: 5rem 0;
+      .carousel-item {
+        h1 {
+          font-size: 3.8rem;
+        }
+        p {
+          width: 65%;
+        }
+        a {
+          transition: 0.5s ease-in;
+        }
+        a:hover {
+          color:#63a4d9;
+          background-color: #f2f2f2;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .left-padding {
+    padding-left: 0;
+  }
+  .row article:last-of-type {
+    margin-top: 0;
+  }
+  main{
+    input.form-control:not(#website){
+      width: 49% !important;
+      display: inline-block !important;       
+  }
+  input:first-of-type{
+      margin-right: 1%;
+  }
+
+  }
+  /*#plan{
+    img{
+      width:120%;
+      margin-left: -30px;
+      transition: 0.5s ease-in-out;
+  }
+  }*/
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #navbar {
+    a,
+    button {
+      display: inline-block;
+      transition: background-color 0.5s;
+      margin-top: 0;
+      padding: 0.5rem;
+    }
+
+    a:not(a:last-of-type),
+    button {
+      margin-left: 5px;
+    }
+    a:hover,
+    #dropdown:hover,
+    #dropContent button:hover {
+      background: #63a4d9;
+      border-bottom: 3px solid #fff;
+      text-decoration: none;
+      color: #fff;
+    }
+    #btn {
+      display: none;
+    }
+    #logo:hover {
+      color: #fff;
+    }
+    #navItems {
+      display: block;
+      background-color: transparent;
+      position: static;
+      padding: 15px 0px;
+      height: auto;
+      overflow: hidden;
+      .fas {
+        position: relative;
+        right: 0 !important;
+      }
+    }
+    .fa-times {
+      display: none;
+    }
+    button i {
+      margin-left: 5px !important;
+      margin-top: 0 !important;
+    }
+    #dropContent {
+      margin-top: 0.1rem;
+      position: absolute;
+      left: 78%;
+      width: 20%;
+    }
+    #dropContent,
+    #dropContentDeep {
+      background-color: #fff;
+      box-shadow: -3px 4px 2px 3px #bec4ca;
+    }
+    #dropContent a,
+    #dropContent button {
+      color: #172f42;
+      margin-top: 10px;
+    }
+  }
+  #plan{
+    article:hover .card-body{
+      border-top:5px solid #68A4C4;
+  }
+  article:hover img{
+      transform:scale(1.1);
+      margin-left: 0;
+  }
+  }
+  #pricing{
+    .second{transform: scale(1.1);z-index: 10;}
+    a:hover{
+      background-color: #5fb5e2;
+      transform: translateY(5px);
+
+    }
+  }
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}

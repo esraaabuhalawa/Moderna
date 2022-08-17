@@ -1,0 +1,77 @@
+#navbar {
+  background-color: rgba(13, 39, 53, 0.911) !important;
+}
+
+#team {
+  padding: 40px 0;
+  background-color: #fff;
+}
+
+#team .card .img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+#team .card .img-container:hover aside {
+  bottom: 0;
+}
+
+#team .card aside {
+  padding: 5px 0;
+  position: absolute;
+  background: rgba(13, 39, 53, 0.911);
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  bottom: -40px;
+  -webkit-transition: 0.8s ease-in;
+  transition: 0.8s ease-in;
+}
+
+#team .card a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  margin-right: 15px;
+}
+
+#team .card a:hover {
+  color: #63a4d9;
+}
+
+#team .card h5 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+#team .card span {
+  font-size: 0.8rem;
+  color: #63a4d9;
+  -webkit-transform: scaleY(1.1);
+          transform: scaleY(1.1);
+}
+
+#team .card .card-text {
+  font-size: 0.9rem;
+  margin-top: 15px;
+  color: #667d8b;
+  line-height: 1.5;
+  text-align: justify;
+  font-style: italic;
+}
+
+#team .card .card-body {
+  padding: 1.5rem 0;
+}
+
+.card {
+  background-color: transparent;
+  border: none;
+  margin: 1.2rem 0;
+}
+
+#contactUs {
+  margin-top: 0 !important;
+}
+/*# sourceMappingURL=team.css.map */

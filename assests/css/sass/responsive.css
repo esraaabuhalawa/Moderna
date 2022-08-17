@@ -1,0 +1,131 @@
+/* Extra small devices (portrait phones, less than 576px)
+No media query since this is the default if you use "mobile first" */
+/* Small devices (landscape phones, 576px and up) */
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  header .slide-cont {
+    padding: 5rem 0;
+  }
+  header .slide-cont .carousel-item h1 {
+    font-size: 3.8rem;
+  }
+  header .slide-cont .carousel-item p {
+    width: 65%;
+  }
+  header .slide-cont .carousel-item a {
+    -webkit-transition: 0.5s ease-in;
+    transition: 0.5s ease-in;
+  }
+  header .slide-cont .carousel-item a:hover {
+    color: #63a4d9;
+    background-color: #f2f2f2;
+    cursor: pointer;
+  }
+  .left-padding {
+    padding-left: 0;
+  }
+  .row article:last-of-type {
+    margin-top: 0;
+  }
+  main input.form-control:not(#website) {
+    width: 49% !important;
+    display: inline-block !important;
+  }
+  main input:first-of-type {
+    margin-right: 1%;
+  }
+  /*#plan{
+    img{
+      width:120%;
+      margin-left: -30px;
+      transition: 0.5s ease-in-out;
+  }
+  }*/
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #navbar a,
+  #navbar button {
+    display: inline-block;
+    -webkit-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+    margin-top: 0;
+    padding: 0.5rem;
+  }
+  #navbar a:not(a:last-of-type),
+  #navbar button {
+    margin-left: 5px;
+  }
+  #navbar a:hover,
+  #navbar #dropdown:hover,
+  #navbar #dropContent button:hover {
+    background: #63a4d9;
+    border-bottom: 3px solid #fff;
+    text-decoration: none;
+    color: #fff;
+  }
+  #navbar #btn {
+    display: none;
+  }
+  #navbar #logo:hover {
+    color: #fff;
+  }
+  #navbar #navItems {
+    display: block;
+    background-color: transparent;
+    position: static;
+    padding: 15px 0px;
+    height: auto;
+    overflow: hidden;
+  }
+  #navbar #navItems .fas {
+    position: relative;
+    right: 0 !important;
+  }
+  #navbar .fa-times {
+    display: none;
+  }
+  #navbar button i {
+    margin-left: 5px !important;
+    margin-top: 0 !important;
+  }
+  #navbar #dropContent {
+    margin-top: 0.1rem;
+    position: absolute;
+    left: 78%;
+    width: 20%;
+  }
+  #navbar #dropContent,
+  #navbar #dropContentDeep {
+    background-color: #fff;
+    -webkit-box-shadow: -3px 4px 2px 3px #bec4ca;
+            box-shadow: -3px 4px 2px 3px #bec4ca;
+  }
+  #navbar #dropContent a,
+  #navbar #dropContent button {
+    color: #172f42;
+    margin-top: 10px;
+  }
+  #plan article:hover .card-body {
+    border-top: 5px solid #68A4C4;
+  }
+  #plan article:hover img {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    margin-left: 0;
+  }
+  #pricing .second {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    z-index: 10;
+  }
+  #pricing a:hover {
+    background-color: #5fb5e2;
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+/*# sourceMappingURL=responsive.css.map */
